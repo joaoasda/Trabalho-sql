@@ -1,0 +1,13 @@
+com.biblioteca
+└── database
+    ├── entities
+    │   ├── Livro.kt
+    │   ├── Emprestimo.kt
+    │   └── ItemEmprestimo.kt
+    ├── daos
+    │   ├── LivroDao.kt
+    │   ├── EmprestimoDao.kt
+    │   └── ItemEmprestimoDao.kt
+    ├── relations
+    │   └── EmprestimoComItens.kt
+    └── BibliotecaDatabase.kt
