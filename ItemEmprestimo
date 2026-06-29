@@ -1,0 +1,15 @@
+@Dao
+interface LivroDao {
+
+    @Query("SELECT * FROM livro ORDER BY titulo ASC")
+    fun getAll(): Flow<List<Livro>>
+
+    @Insert
+    suspend fun insert(livro: Livro)
+
+    @Update
+    suspend fun update(livro: Livro)
+
+    @Delete
+    suspend fun delete(livro: Livro)
+}
